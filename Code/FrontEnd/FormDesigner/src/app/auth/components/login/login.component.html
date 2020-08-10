@@ -1,0 +1,26 @@
+<body background="../../../../assets/images/login.png"></body>
+<div [formGroup]="_loginFormGroup" [@routeTransition]="state" class="login-container">
+ <body>
+   <img src="../../../../assets/images/avatar.svg" alt="zoom" width="100%" height="100">
+   
+   
+   
+   <div class="form-container">
+  <h2>Name :</h2>  <fd-input [placeholderText]="getUsernamePlaceholder()" [controlGroup]="_loginFormGroup"
+                          [controlName]="getUserFormControlName()"></fd-input>
+    </div>
+    <div class="form-container">
+    <h2>Password :</h2> <fd-input [placeholderText]="getPasswordPlaceholder()" [type]="getPasswordType()"
+                [controlGroup]="_loginFormGroup"
+                [controlName]="getPasswordFormControlName()" ></fd-input>
+                
+    </div>
+    <div class="actions-container">
+      <fd-button [text]='getLoginButtonText()' [styles]="getStyles()" (notifyClick)="onLogin()" ></fd-button>  
+      <img class="img-login" src="../../../../assets/images/img.svg" alt="zoom" width=320% height="40% ">
+      
+    </div>
+    
+  </body>
+  
+</div> 

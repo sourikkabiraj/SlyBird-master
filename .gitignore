@@ -1,0 +1,17 @@
+# Dependency directories
+.vscode/
+build/
+Code/FrontEnd/FormDesigner/.vscode/
+Code/FrontEnd/FormDesigner/node_modules/
+Code/FrontEnd/FormDesigner/dist/
+Code/FrontEnd/FormDesigner/.editorconfig
+Code/FrontEnd/FormDesigner/lintresult.txt
+Code/Server/FormBuilder.Server/.vs/
+Code/Server/FormBuilder.Server/node_modules/
+Code/Server/FormBuilder.Server/obj/
+Code/Server/FormBuilder.Server/public
+Code/Server/FormBuilder.Server/.profile
+Docs/FormDesigner/
+i18n/
+*.dat
+

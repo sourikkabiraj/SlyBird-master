@@ -1,0 +1,17 @@
+<li class="form-item" [attr.data-form-id]="form.id" (click)="onItemClick($event)">
+  <div class="form-item-detail">
+    <span class="form-title">{{form.name}}</span>
+    <div class="form-detail">
+      <span class="date">Created on {{form.modifiedDate}}.</span>
+    </div>
+  </div>
+  <div class="action-container">
+    <div class="action-item" data-action="edit">
+      <span class="fa fa-2x fa-pencil-square-o" aria-hidden="true" title="Edit Form" data-action="edit"></span>
+    </div>
+    
+    <div class="action-item" data-action="delete">
+      <span class="fa fa-2x fa-trash" aria-hidden="true" title="Delete Form" data-action="delete"></span>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,92 @@
+@import '../../../styles/core/_colors';
+
+// body{
+//     background: #444 url(/assets/tile-black.jpg) repeat scroll 0 0 !important;
+// }
+.myforms-container{
+    min-height:750px;
+    width:98%;
+    color:$White;
+    margin:5px;
+    border-top:9px solid  #aae2f0 !important;
+    border:1px solid  #60f7c4;
+    background-color: White !important;
+
+    display:flex;
+    flex-direction:row;
+
+    .left-area{
+        flex-grow: 1;
+        border-right:2px solid #10aaa2;
+        display:flex;
+        flex-direction: column;
+
+        .action-area{
+            flex-grow:0.16;
+            border-bottom:2px solid #10aaa2;
+
+            /deep/ .createform-btn{
+                width:90%;
+                background-color: #10aaa2;
+                margin-left:10px;
+                margin-top:10px;
+            }
+        }
+
+        .filters-area{
+            flex-grow: 3;
+            .options-area{
+                padding:0px;
+                list-style: none;
+                .option-item{
+                    width:98%;
+                    min-height:2.2em;
+                    cursor:pointer;
+                    margin:10px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #29a179;
+                        padding:10px;
+                        font-size:1.5em;
+                        text-align: center;
+                    }
+                }
+                .option-item:hover{
+                    background-color: #69e4bb;
+                }
+            }
+        }
+    }
+
+    .main-area{
+        flex-grow:3;
+        display:flex;
+        flex-direction: column;
+
+        .options-area{
+            flex-grow:0.5;
+            border-bottom:2px solid $Background-Color;
+        }
+
+        .forms-area{
+            flex-grow: 3;
+
+            .form-list-container{
+                padding:10px;
+            }
+
+            .noforms-container{
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 150px;
+                width: 450px;
+                color:$Black90;
+
+                h2{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

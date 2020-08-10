@@ -1,0 +1,21 @@
+{
+  "name": "formbuilder.server",
+  "version": "0.1.0",
+  "description": "Backend for Form Builder",
+  "main": "infrastructure/server.js",
+  "scripts": {
+    "start": "node infrastructure/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^8.0.1",
+    "mongodb": "^2.2.25",
+    "uuid": "^3.0.1"
+  },
+  "engines": {
+    "node": "8.5.0",
+    "npm": "4.2.0"
+  }
+}

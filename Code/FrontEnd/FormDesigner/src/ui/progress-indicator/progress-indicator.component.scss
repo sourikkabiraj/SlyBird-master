@@ -1,0 +1,4 @@
+@import "../../styles/core/common";
+.ui-overlay{
+   @include overlay();
+}

@@ -1,0 +1,33 @@
+@import '../../../../styles/core/_colors';
+@import '../../../../styles/core/common';
+
+.login-container{
+    border:1px solid black;
+    border-radius:3px;
+    width:40%;
+    height:91%;
+    @include center-div(15%,0%,5%,5%);
+
+    .form-container{
+        width:50%;
+       margin:0 auto;
+       padding:5px;
+    }
+    .img-login{
+        width: 900px;
+        height: 400px;
+        @include center-div(10%,80%,10%,5%)
+        
+    }
+    .actions-container{
+        margin:0 auto;
+        padding:5px;
+            /deep/ .ok-btn{
+                        width:80%;
+                        background-color:#f5890e;
+                        margin-left:30px;
+                        margin-top:10px;
+                        color:$White
+                    }
+        }
+}

@@ -1,0 +1,19 @@
+<div [formGroup]="controlGroup" *ngIf="_usesReactive" >
+  <mat-form-field>
+    <mat-select [formControlName]="controlName" [placeholder]="placeholderText" class="dropdown">
+      <mat-option *ngFor="let pair of selectPairs" [value]="pair.key">
+        {{ pair.value }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div *ngIf="!_usesReactive" class="dropdown">
+  <mat-form-field>
+    <mat-select [placeholder]="placeholderText">
+      <mat-option *ngFor="let pair of selectPairs" [value]="pair.key">
+        {{ pair.value }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

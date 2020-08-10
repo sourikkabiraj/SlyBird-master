@@ -1,0 +1,29 @@
+<div class="myforms-container" [@routeTransition]="state">
+    <div class="left-area">
+        <div class="action-area">
+            <fd-button [text]='getText()' [styles]="getStyles()" (notifyClick)="onCreateForm($event)"></fd-button>
+        </div>
+
+        <div class="filters-area">
+            <ul class="options-area">
+                <li class="option-item">
+                    <a href="#">My Forms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-area">
+        
+
+        <div class="forms-area">
+            <div class="noforms-container" [hidden]="hasForms()">
+                <h2 i18n="User instruction|Message shown to user when no forms are created">You dont have any forms yet</h2>
+            </div>
+
+            <ul *ngFor="let form of forms | formsByDeletionFilter:false" class="form-list-container">
+                <fd-formitem [form]="form" (notifyAction)="handleAction($event)"></fd-formitem>
+            </ul>
+        </div>
+    </div>
+</div>

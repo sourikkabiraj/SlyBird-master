@@ -1,0 +1,104 @@
+@import '../../../../styles/core/_colors';
+.action-area{
+    flex-grow:1;
+    height:80px;
+    .add-row-left{
+        width:90px;
+        height:40px;
+        background-color:$DarkGrey03;
+        color:$White;
+        margin:10px;
+        text-align: center;
+    }
+    .add-row{
+          position:relative;
+          text-decoration: none;
+          background-color:$DarkGrey03;
+          height: 50px;
+          display: block;
+          width: 50px;
+          border-radius:50%;
+          margin:5px;
+
+          .addrow-icon{
+                  color:$White;
+                   display:block;
+                   padding-left: 12px;
+                   padding-top: 10px;
+               }
+          }
+    .ripple{
+         width: 0;
+        height: 0;
+        position: absolute;
+        top: 22px;
+        left: 25px;
+        border-radius: 50%;
+        border: 1px solid $DarkGrey03;
+        -webkit-animation: load-progress 3s infinite;  
+        animation: load-progress 3s infinite;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes load-progress { 100% {
+    margin-left: -80px;
+    margin-top: -80px;
+    border-width: 80px;
+    opacity: 0;
+    }}
+
+@keyframes load-progress { 100% {
+    margin-left: -80px;
+    margin-top: -80px;
+    border-width: 80px;
+    opacity: 0;
+    }}
+
+/deep/ .mat-tab-label{
+    color:$White;
+    text-transform: uppercase;
+    background-color:$Black90;
+}
+.controls-panel{
+                    display:flex;
+                    flex-direction: column;
+                    flex-grow:3;
+                    width:100%;
+
+                    .control{
+                        flex-grow:0.5;
+                        border:1px solid $Black90;
+                        
+                        cursor:move;
+                        
+                        background-color: $DarkGrey02;
+                        font-size:25px;
+                        color: $White;
+
+                        .control-icon{
+                            flex-grow:1;
+                            background-color: $DarkGrey03;
+                            color: $White;
+                            display:inline-block;
+                            height:100%;
+                            padding:10px;
+                        }
+
+                        .control-label{
+                            flex-grow:3;
+                            
+                            display:inline-block;
+                            padding:10px;
+                        }
+                    }
+
+                    .control:hover{
+                        background-color:$Background-Color;
+                    }
+                    .control:hover .control-icon{
+                        background-color:$Background-Color;
+                    }
+                }

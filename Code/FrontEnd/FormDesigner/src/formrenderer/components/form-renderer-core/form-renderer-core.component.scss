@@ -1,0 +1,63 @@
+@import '../../../styles/core/_colors';
+
+.form-rendered-container{
+    padding:20px;
+    margin:0 auto;
+    width:70%;
+    background-color:$White;
+    border:2px solid White;
+    background-color:#ece470;
+    box-shadow:9px 9px 9px rgba(0, 0, 0, 0.1);
+
+    .form-title{
+        padding:10px;
+        border-bottom:2px solid $Black90;
+        font-size: 2em;
+        font-weight: 400;
+        margin: 5px;
+        line-height: 20px;
+    }
+    
+    .form{
+         margin-top:20px;
+         .row-container{
+            display:flex;
+            margin:5px;
+            
+
+            .row-container-right{
+                justify-content: flex-end;
+            }
+
+            .row-container-left{
+                justify-content: flex-start;
+            }
+
+            .row-container-both{
+                justify-content: space-around;
+            }
+
+            .field-container-normal{
+                width:50%;
+                margin:5px;
+            }
+
+            .field-container-span{
+                flex-grow:1;
+                margin:5px;
+            }
+    }
+
+    .form-row{
+        margin: 0 auto;
+        width: 10%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+            /deep/ .submit-btn{
+                background-color:$Background-Color;
+                color:$White;
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,31 @@
+<body background="../../../../assets/images/register.png"></body>
+<div [formGroup]="_signupFormGroup" class="login-container">
+  <body>
+    <img src="../../../../assets/images/avatar2.svg" alt="zoom" width="100%" height="100">
+
+
+
+    <div class="form-container">
+     <h3>Name :</h3> <fd-input [placeholderText]="getUsernamePlaceholder()" [controlGroup]="_signupFormGroup"
+                          [controlName]="getUserFormControlName()"></fd-input>
+      <span class="error" *ngIf="showUserNameExistsMessage()">User name already exists. Choose a different name.</span>
+    </div>
+    <div class="form-container">
+      <h3>Email :</h3> <fd-input [placeholderText]="getEmailPlaceholder()" [type]="getEmailType()"
+                [controlGroup]="_signupFormGroup"
+                [controlName]="getEmailFormControlName()" ></fd-input>
+    
+    </div>
+    <div class="form-container">
+      <h3>Password :</h3>  <fd-input [placeholderText]="getPasswordPlaceholder()" [type]="getPasswordType()"
+                [controlGroup]="_signupFormGroup"
+                [controlName]="getPasswordFormControlName()" ></fd-input>
+    
+    </div>
+    <div class="actions-container">
+      <fd-button [text]='getSignupButtonText()' [styles]="getStyles()" (notifyClick)="onRegister()" ></fd-button> 
+      <img class="img-login" src="../../../../assets/images/img2.svg" alt="zoom" width=320% height="40% "> 
+    </div>
+  </body>
+</div> 
+

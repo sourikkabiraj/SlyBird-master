@@ -1,0 +1,25 @@
+@import '../../styles/core/_colors.scss';
+
+.navbar{
+    .nav{
+        list-style: none;
+        width:100%;
+        background-color:  #10aaa2;
+        height:50px;
+
+        li{
+            text-transform: uppercase;
+            display:inline-block;
+            margin-top:15px;
+            font-size:1em;
+            margin-right:25px;
+            a{
+                text-decoration: none;
+                color:$White;
+            }
+        }
+    }
+}
+.footer{
+    border-top:2px solid $Grey;
+}
